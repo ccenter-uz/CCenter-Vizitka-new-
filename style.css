@@ -6,10 +6,6 @@
   font-family: "Roboto";
 }
 
-canvas {
-  display: block;
-  position: fixed;
-}
 body {
   margin: 0;
   padding: 0;
@@ -45,11 +41,10 @@ body {
 .logo {
   text-align: center;
   margin-bottom: 2rem;
-}
-
-.logo img {
-  width: 304px;
-  height: 48px;
+  img {
+    width: 304px;
+    height: 48px;
+  }
 }
 
 .official-site {
@@ -68,10 +63,14 @@ body {
   text-align: center;
   margin-bottom: 2rem;
   color: white;
-  transition: background-color 0.3s;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  transition: background-color 0.5s;
   &:hover {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.315);
+    border-top: 1px solid rgba(255, 255, 255, 0.315);
   }
 }
 .social {
@@ -100,13 +99,59 @@ body {
   justify-content: center;
   gap: 1rem;
   font-size: 14px;
+  transition: all 0.5s ease;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
 }
 
 .social-button:hover {
   background-color: rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.315);
+  border-top: 1px solid rgba(255, 255, 255, 0.315);
 }
 
 .social-icon {
   width: 25px;
   height: 25px;
+}
+
+@media (320px <= width <= 768px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+  }
+  .logo {
+    img {
+      width: 182px;
+      height: 34px;
+    }
+  }
+  .official-site {
+    max-width: 153px;
+    max-height: 32px;
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+  .social-button {
+    width: 153px;
+    height: 42px;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .social-icon {
+    width: 2rem;
+    height: 2rem;
+  }
 }
