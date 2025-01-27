@@ -17,24 +17,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("assets/bg\ \(2\).png");
-  animation: slide 5s linear infinite;
+  background: url("assets/bg-dark.png") no-repeat center center;
+  animation: slide 10s linear alternate-reverse infinite;
 }
 
 @keyframes slide {
-  0% {
-    background-position: left top;
-  }
-  50% {
-    background-position: left bottom;
-  }
   100% {
-    background-position: right top;
+    background-position: right bottom;
   }
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.096);
+  background: rgba(57, 49, 165, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(41px);
   padding: 2rem;
