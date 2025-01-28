@@ -114,7 +114,8 @@ body {
   width: 25px;
   height: 25px;
 }
-.phone-icon {
+.phone-icon,
+.mail-icon {
   width: 20px;
   height: 20px;
   opacity: 0.8;
@@ -158,5 +159,10 @@ body {
   .social-icon {
     width: 2rem;
     height: 2rem;
+  }
+  .phone-icon,
+  .mail-icon {
+    width: 1.7em;
+    height: 1.7em;
   }
 }
