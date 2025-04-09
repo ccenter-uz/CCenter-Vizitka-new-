@@ -10,21 +10,37 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Kontakt Markazi</title>
+
+    <script src="https://uztelecom.uz/js/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="logo">
-        <img src="assets/logo.svg" alt="logo" />
+      <div class="user">
+        <h3>Jamila Rakhimova</h3>
+        <span>Deputy Direktor of «Contact Center» LLC </span>
       </div>
       <a
         href="https://ccenter.uz/"
         target="_blank"
         class="official-site"
         title="Rasmiy sayt"
-        >Rasmiy sayt</a
+        >Website</a
       >
-      <p class="social">Ijtimoiy tarmoqlar</p>
+      <hr class="divider" />
       <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/jamila-rakhimova-56ba23336/"
+          target="_blank"
+          class="social-button"
+          title="LinkedIn"
+        >
+          <img
+            src="assets/linkedin-fill.svg"
+            alt="linkedin"
+            class="social-icon linkedin-icon"
+          />
+          <p>LinkedIn</p>
+        </a>
         <a
           href="https://t.me/Jamila_Rakhimova"
           target="_blank"
@@ -39,7 +55,11 @@
           <p>Telegram</p>
         </a>
 
-        <a href="mailto:" class="social-button" title="mail">
+        <a
+          href="mailto:j.rakhimova@uztelecom.uz"
+          class="social-button"
+          title="mail"
+        >
           <img
             src="assets/mail-fill.svg"
             alt="mail"
@@ -61,8 +81,17 @@
           <p>Phone</p>
         </a>
       </div>
+      <div class="logo">
+        <img src="assets/logo.svg" alt="logo" />
+      </div>
     </div>
-
-    <script src="script.js"></script>
+    <canvas
+      id="gradient-canvas"
+      width="1912"
+      height="600"
+      class="isLoaded"
+    ></canvas>
+    <script type="module" src="canvas.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
